@@ -1,5 +1,14 @@
-ali:
-  pro1:
-    value: 1
-  pro2:
-    value: 2
+spring:
+  dataSource:
+    url: jdbc:mysql://localhost:3306/student_db
+    username: root
+    password:
+  jpa:
+    hibernate:
+      ddl-auto: create
+    database: mysql
+    database-platform: org.hibernate.dialect.MySQLDialect
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
